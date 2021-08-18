@@ -1,3 +1,3 @@
 # stepik-auto-tests-course
-https://stepik.org/course/575/syllabus
+https://stepik.org/course/575/syllabus \n
 homework
