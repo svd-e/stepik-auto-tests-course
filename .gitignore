@@ -1,7 +1,2 @@
 .idea/
-.pytest_cache
-*.__pycache__/
-.__pycache__
 env/
-conftest.cpython-39-pytest-6.2.4.pyc
-test_main_page.cpython-39-pytest-6.2.4.pyc
