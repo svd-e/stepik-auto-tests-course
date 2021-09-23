@@ -28,4 +28,4 @@ def test_guest_should_see_login_link(browser):
 
 
 # pytest -v --tb=line --language=en test_main_page.py
-# "lesson 4.2 step 8. LoginPage realization ver. 0"
+# "lesson 4.2 step 9. Jumping between pages ver. 0"
