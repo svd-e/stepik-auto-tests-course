@@ -18,14 +18,5 @@ def test_guest_should_see_login_link(browser):
     page.open()
     page.should_be_login_link()
 
-# def test_guest_should_see_login_page(browser):
-#     link = "http://selenium1py.pythonanywhere.com/accounts/login/"
-#     page = LoginPage(browser, link)
-#     page.open()
-#     page.should_be_login_page()
-
-
-
-
 # pytest -v --tb=line --language=en test_main_page.py
 # "lesson 4.2 step 9. Jumping between pages ver. 0"
