@@ -7,7 +7,7 @@ class ProductPage(BasePage):
     def add_product_to_basket(self):
         product_link = self.browser.find_element(*MainPageLocators.ADD_TO_BASKET_LINK)
         product_link.click()
-        self.solve_quiz_and_get_code()
+        # self.solve_quiz_and_get_code() ВЕРНУТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         
     def should_be_right_name(self):
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME)
@@ -18,3 +18,11 @@ class ProductPage(BasePage):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE)
         added_product_price = self.browser.find_element(*ProductPageLocators.ADDED_PRODUCT_PRICE)
         assert product_price.text == added_product_price.text, "The cost of added product is wrong"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+           "Success message is presented, but should not be"
+
+    def should_dissapear_of_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+           "Success message has not disappeared"

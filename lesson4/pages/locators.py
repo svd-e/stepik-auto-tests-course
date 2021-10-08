@@ -13,4 +13,5 @@ class ProductPageLocators():
     ADDED_PRODUCT_NAME = (By.CSS_SELECTOR, "#messages strong")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
     ADDED_PRODUCT_PRICE = (By.CSS_SELECTOR, ".alertinner p strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
     
