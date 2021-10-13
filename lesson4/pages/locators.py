@@ -28,4 +28,4 @@ class BasketPageLocators():
 
 
 
-# "lesson 4.3 step 10. Assignment: inheritance and negative checks"
+# "lesson 4.3 step 11. Grouping tests: setup"
