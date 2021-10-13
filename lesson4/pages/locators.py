@@ -18,3 +18,14 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_OPENING_LINK = (By.CSS_SELECTOR, ".btn-group .btn")
+
+class BasketPageLocators():
+    # BASKET_OPENED_LINK = (By.CSS_SELECTOR, ".page-header")
+    BASKET_IS_NOT_EMPTY_LINK = (By.CSS_SELECTOR, ".col-sm-6")
+    EMPTY_BASKET_TEXT = (By.CSS_SELECTOR, ".content p")
+    
+
+
+
+# "lesson 4.3 step 10. Assignment: inheritance and negative checks"
