@@ -7,6 +7,11 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+    REGISTRATION_EMAIL = (By.CSS_SELECTOR, "[name='registration-email']")
+    REGISTRATION_PASSWORD_1 = (By.CSS_SELECTOR, "[name='registration-password1']")
+    REGISTRATION_PASSWORD_2 = (By.CSS_SELECTOR, "[name='registration-password2']")
+    REGISTRATION_SUBMIT_BTN = (By.CSS_SELECTOR, "[name='registration_submit']")
+    
 
 class ProductPageLocators():
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
@@ -19,6 +24,7 @@ class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_OPENING_LINK = (By.CSS_SELECTOR, ".btn-group .btn")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators():
     # BASKET_OPENED_LINK = (By.CSS_SELECTOR, ".page-header")
@@ -28,4 +34,4 @@ class BasketPageLocators():
 
 
 
-# "lesson 4.3 step 11. Grouping tests: setup"
+# "lesson 4.3 step 13. Assignment: grouping tests and setup. ver. 0"

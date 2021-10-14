@@ -7,7 +7,7 @@ class ProductPage(BasePage):
     def add_product_to_basket(self):
         product_link = self.browser.find_element(*MainPageLocators.ADD_TO_BASKET_LINK)
         product_link.click()
-        # self.solve_quiz_and_get_code() ВЕРНУТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        # self.solve_quiz_and_get_code() Это нужно было для одного из заданий
         
     def should_be_right_name(self):
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME)
