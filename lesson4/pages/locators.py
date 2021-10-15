@@ -34,4 +34,4 @@ class BasketPageLocators():
 
 
 
-# "lesson 4.3 step 13. Assignment: grouping tests and setup. ver. 0"
+# "lesson 4.3 step 14. Final result. ver. 0"

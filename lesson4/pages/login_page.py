@@ -1,28 +1,21 @@
-from pages.base_page import BasePage
-# from .base_page import BasePage - for linux and PyCharm
-from pages.locators import LoginPageLocators
+from .base_page import BasePage
+from .locators import LoginPageLocators
 import time
 
 
 class LoginPage(BasePage):
     def register_new_user(self, email, password):
-        # self.email = str(time.time()) + "@fakemail.org"
-        # self.password = "qwerty333"
-        
         email_field = self.browser.find_element(*LoginPageLocators.REGISTRATION_EMAIL)
         email_field.send_keys(email)
 
         password1_field = self.browser.find_element(*LoginPageLocators.REGISTRATION_PASSWORD_1)
         password1_field.send_keys(password)
-        
 
         password2_field = self.browser.find_element(*LoginPageLocators.REGISTRATION_PASSWORD_2)
         password2_field.send_keys(password)
 
         submit_button = self.browser.find_element(*LoginPageLocators.REGISTRATION_SUBMIT_BTN)
         submit_button.click()
-
-
 
     def should_be_login_page(self):
         self.should_be_login_url()

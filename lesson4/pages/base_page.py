@@ -3,14 +3,14 @@ from selenium.common.exceptions import NoAlertPresentException # чтобы ис
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from pages.locators import BasePageLocators
+from .locators import BasePageLocators
 import math
 
 class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
-        # self.browser.implicitly_wait(timeout)
+        # self.browser.implicitly_wait(timeout) Было нужно
 
     def open(self):
         self.browser.get(self.url)
@@ -56,9 +56,6 @@ class BasePage():
     def should_be_authorized_user(self):
         assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
                                                                      " probably unauthorised user"
-
-
-    
 
     def solve_quiz_and_get_code(self):          # stepic-метод для получения ответов
         alert = self.browser.switch_to.alert

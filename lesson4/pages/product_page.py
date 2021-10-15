@@ -1,7 +1,6 @@
-from pages.base_page import BasePage
-# from .base_page import BasePage - for linux and PyCharm
-from pages.locators import MainPageLocators
-from pages.locators import ProductPageLocators
+from .base_page import BasePage
+from .locators import MainPageLocators
+from .locators import ProductPageLocators
 
 class ProductPage(BasePage):
     def add_product_to_basket(self):
